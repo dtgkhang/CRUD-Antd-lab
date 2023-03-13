@@ -108,7 +108,7 @@ export default function Main() {
       title: "subject",
       dataIndex: "subject",
       key: "subject",
-      
+ 
     },
     {
       title: "New Phone",
@@ -289,7 +289,10 @@ export default function Main() {
          
         </Col>
         <Col lg={16} xs={24} sm={24}>
-          <Table columns={columns} dataSource={userList} />
+          <Table     scroll={{
+      x: 500,
+      y: 300,
+    }} columns={columns} dataSource={userList} />
         </Col>
       </Row>
   );
