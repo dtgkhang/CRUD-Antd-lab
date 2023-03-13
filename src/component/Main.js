@@ -108,6 +108,7 @@ export default function Main() {
       title: "subject",
       dataIndex: "subject",
       key: "subject",
+      
     },
     {
       title: "New Phone",
@@ -252,6 +253,9 @@ export default function Main() {
                 onChange={formik.handleChange}
               />
 </Grid>
+<Typography variant="caption" color="red">
+                  {formik.errors.message}
+                </Typography>
 <Grid item xs={12} >
 
               <FormControlLabel
