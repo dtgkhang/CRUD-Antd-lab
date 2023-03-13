@@ -85,10 +85,9 @@ export default function Main() {
       title: "id",
       dataIndex: "id",
       key: "id",
-      width: "5%",
-      // sorter: (a, b) => a.vehicleId > b.vehicleId,
-      // sortOrder: sortedInfo.columnKey === 'vehicleId' ? sortedInfo.order : null,
-      // ellipsis: true,
+      sorter: (a, b) => a.id > b.id,
+      // sortOrder: sortedInfo.columnKey === 'id' ? sortedInfo.order : null,
+      ellipsis: true,
     },
     {
       title: "name",
